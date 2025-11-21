@@ -1,0 +1,1871 @@
+Tahoma {
+    "1" : {
+        "attributes" : [
+            ],
+        "available" : true,
+        "controllableName" : "zigbee:TransceiverV3_0Component",
+        "definition" : {
+            "attributes" : [
+                ],
+            "commands" : [
+                ],
+            "states" : [
+                ],
+            "type" : "PROTOCOL_GATEWAY",
+            "uiClass" : "ProtocolGateway",
+            "widgetName" : "ZigbeeStack"
+            },
+        "deviceURL" : "zigbee:\/\/2078-2038-9817\/65535",
+        "enabled" : true,
+        "label" : "ZIGBEE (65535)",
+        "states" : [
+            ],
+        "subsystemId" : 0.000000,
+        "synced" : true,
+        "type" : 5.000000
+        },
+    "2" : {
+        "attributes" : [
+            "1" : {
+                "name" : "core:SupportedManufacturerSettingsCommands",
+                "type" : 10.000000,
+                "value" : [
+                    "1" : "delete_my_position",
+                    "2" : "double_power_cut",
+                    "3" : "reset_actuator",
+                    "4" : "save_my_position",
+                    "5" : "set_timeout_timer",
+                    "6" : "set_timeout_timer_value"
+                    ]
+                },
+            "2" : {
+                "name" : "core:FirmwareRevision",
+                "type" : 3.000000,
+                "value" : "5133033A02"
+                },
+            "3" : {
+                "name" : "core:Manufacturer",
+                "type" : 3.000000,
+                "value" : "Somfy"
+                },
+            "4" : {
+                "name" : "core:SupportedReadableManufacturerData",
+                "type" : 10.000000,
+                "value" : [
+                    "1" : "current_position",
+                    "2" : "setting_state",
+                    "3" : "timeout_timer",
+                    "4" : "timeout_timer_value"
+                    ]
+                },
+            "5" : {
+                "name" : "core:SupportedManufacturerProcedures",
+                "type" : 10.000000,
+                "value" : [
+                    "1" : {
+                        "procedureName" : "delete_my_position"
+                        },
+                    "2" : {
+                        "procedureName" : "double_power_cut"
+                        },
+                    "3" : {
+                        "procedureName" : "reset_actuator"
+                        },
+                    "4" : {
+                        "procedureName" : "save_my_position"
+                        }
+                    ]
+                }
+            ],
+        "available" : false,
+        "controllableName" : "io:DimmableLightIOComponent",
+        "definition" : {
+            "attributes" : [
+                "1" : {
+                    "name" : "core:SupportedManufacturerSettingsCommands"
+                    },
+                "2" : {
+                    "name" : "core:FirmwareRevision"
+                    },
+                "3" : {
+                    "name" : "core:Manufacturer"
+                    },
+                "4" : {
+                    "name" : "core:SupportedReadableManufacturerData"
+                    },
+                "5" : {
+                    "name" : "core:SupportedManufacturerProcedures"
+                    }
+                ],
+            "commands" : [
+                "1" : {
+                    "commandName" : "off",
+                    "nparams" : 0.000000
+                    },
+                "10" : {
+                    "commandName" : "unpairOneWayController",
+                    "nparams" : 1.000000,
+                    "paramsSig" : "p1,*p2"
+                    },
+                "11" : {
+                    "commandName" : "stopIdentify",
+                    "nparams" : 0.000000
+                    },
+                "12" : {
+                    "commandName" : "sendIOKey",
+                    "nparams" : 0.000000
+                    },
+                "13" : {
+                    "commandName" : "unpairAllOneWayControllersAndDeleteNode",
+                    "nparams" : 0.000000
+                    },
+                "14" : {
+                    "commandName" : "setSecuredPosition",
+                    "nparams" : 1.000000,
+                    "paramsSig" : "p1"
+                    },
+                "15" : {
+                    "commandName" : "setPosition",
+                    "nparams" : 1.000000,
+                    "paramsSig" : "p1"
+                    },
+                "16" : {
+                    "commandName" : "setMemorized1Position",
+                    "nparams" : 1.000000,
+                    "paramsSig" : "p1"
+                    },
+                "17" : {
+                    "commandName" : "refreshMemorized1Position",
+                    "nparams" : 0.000000
+                    },
+                "18" : {
+                    "commandName" : "runManufacturerSettingsCommand",
+                    "nparams" : 2.000000,
+                    "paramsSig" : "p1,p2"
+                    },
+                "19" : {
+                    "commandName" : "keepOneWayControllersAndDeleteNode",
+                    "nparams" : 0.000000
+                    },
+                "2" : {
+                    "commandName" : "identify",
+                    "nparams" : 0.000000
+                    },
+                "20" : {
+                    "commandName" : "resetLockLevels",
+                    "nparams" : 0.000000
+                    },
+                "21" : {
+                    "commandName" : "removeLockLevel",
+                    "nparams" : 1.000000,
+                    "paramsSig" : "p1"
+                    },
+                "22" : {
+                    "commandName" : "readManufacturerData",
+                    "nparams" : 1.000000,
+                    "paramsSig" : "p1"
+                    },
+                "23" : {
+                    "commandName" : "advancedRefresh",
+                    "nparams" : 1.000000,
+                    "paramsSig" : "p1,*p2"
+                    },
+                "24" : {
+                    "commandName" : "getName",
+                    "nparams" : 0.000000
+                    },
+                "25" : {
+                    "commandName" : "setOnOff",
+                    "nparams" : 1.000000,
+                    "paramsSig" : "p1"
+                    },
+                "26" : {
+                    "commandName" : "addLockLevel",
+                    "nparams" : 1.000000,
+                    "paramsSig" : "p1,*p2"
+                    },
+                "27" : {
+                    "commandName" : "executeManufacturerProcedure",
+                    "nparams" : 1.000000,
+                    "paramsSig" : "p1,*p2"
+                    },
+                "28" : {
+                    "commandName" : "writeManufacturerData",
+                    "nparams" : 1.000000,
+                    "paramsSig" : "p1"
+                    },
+                "29" : {
+                    "commandName" : "wink",
+                    "nparams" : 1.000000,
+                    "paramsSig" : "p1"
+                    },
+                "3" : {
+                    "commandName" : "setName",
+                    "nparams" : 1.000000,
+                    "paramsSig" : "p1"
+                    },
+                "30" : {
+                    "commandName" : "setIntensity",
+                    "nparams" : 1.000000,
+                    "paramsSig" : "p1"
+                    },
+                "31" : {
+                    "commandName" : "onWithTimer",
+                    "nparams" : 1.000000,
+                    "paramsSig" : "p1"
+                    },
+                "32" : {
+                    "commandName" : "setIntensityWithTimer",
+                    "nparams" : 2.000000,
+                    "paramsSig" : "p1,p2,*p3"
+                    },
+                "33" : {
+                    "commandName" : "on",
+                    "nparams" : 0.000000
+                    },
+                "4" : {
+                    "commandName" : "my",
+                    "nparams" : 0.000000
+                    },
+                "5" : {
+                    "commandName" : "setConfigState",
+                    "nparams" : 1.000000,
+                    "paramsSig" : "p1"
+                    },
+                "6" : {
+                    "commandName" : "unpairAllOneWayControllers",
+                    "nparams" : 0.000000
+                    },
+                "7" : {
+                    "commandName" : "startIdentify",
+                    "nparams" : 0.000000
+                    },
+                "8" : {
+                    "commandName" : "pairOneWayController",
+                    "nparams" : 1.000000,
+                    "paramsSig" : "p1,*p2"
+                    },
+                "9" : {
+                    "commandName" : "delayedStopIdentify",
+                    "nparams" : 1.000000,
+                    "paramsSig" : "p1"
+                    }
+                ],
+            "states" : [
+                "1" : {
+                    "name" : "core:Memorized1PositionState"
+                    },
+                "10" : {
+                    "name" : "core:ManufacturerDiagnosticsState"
+                    },
+                "11" : {
+                    "name" : "core:CommandLockLevelsState"
+                    },
+                "12" : {
+                    "name" : "core:StatusState"
+                    },
+                "13" : {
+                    "name" : "core:NameState"
+                    },
+                "14" : {
+                    "name" : "core:DiscreteRSSILevelState"
+                    },
+                "15" : {
+                    "name" : "core:RSSILevelState"
+                    },
+                "2" : {
+                    "name" : "core:AdditionalStatusState"
+                    },
+                "3" : {
+                    "name" : "core:ManufacturerSettingsState"
+                    },
+                "4" : {
+                    "name" : "core:SecuredPositionState"
+                    },
+                "5" : {
+                    "name" : "core:LightIntensityState"
+                    },
+                "6" : {
+                    "name" : "core:OnOffState"
+                    },
+                "7" : {
+                    "name" : "io:PriorityLockLevelState"
+                    },
+                "8" : {
+                    "name" : "core:PriorityLockTimerState"
+                    },
+                "9" : {
+                    "name" : "io:PriorityLockOriginatorState"
+                    }
+                ],
+            "type" : "ACTUATOR",
+            "uiClass" : "Light",
+            "widgetName" : "DimmerLight"
+            },
+        "deviceURL" : "io:\/\/2078-2038-9817\/10262254",
+        "enabled" : true,
+        "label" : "LightVar_Wh_io",
+        "states" : [
+            "1" : {
+                "name" : "core:CommandLockLevelsState",
+                "type" : 11.000000,
+                "value" : [
+                    ]
+                },
+            "2" : {
+                "name" : "core:DiscreteRSSILevelState",
+                "type" : 3.000000,
+                "value" : "good"
+                },
+            "3" : {
+                "name" : "core:RSSILevelState",
+                "type" : 1.000000,
+                "value" : 98.000000
+                },
+            "4" : {
+                "name" : "core:ManufacturerSettingsState",
+                "type" : 11.000000,
+                "value" : {
+                    "current_position" : 51200.000000
+                    }
+                },
+            "5" : {
+                "name" : "core:LightIntensityState",
+                "type" : 1.000000,
+                "value" : 0.000000
+                },
+            "6" : {
+                "name" : "core:OnOffState",
+                "type" : 3.000000,
+                "value" : "off"
+                },
+            "7" : {
+                "name" : "core:StatusState",
+                "type" : 3.000000,
+                "value" : "unavailable"
+                },
+            "8" : {
+                "name" : "core:NameState",
+                "type" : 3.000000,
+                "value" : "LightVar_Wh_io"
+                },
+            "9" : {
+                "name" : "core:Memorized1PositionState",
+                "type" : 1.000000,
+                "value" : 50.000000
+                }
+            ],
+        "subsystemId" : 0.000000,
+        "synced" : true,
+        "type" : 1.000000
+        },
+    "3" : {
+        "attributes" : [
+            ],
+        "available" : true,
+        "controllableName" : "internal:PodV3Component",
+        "definition" : {
+            "attributes" : [
+                ],
+            "commands" : [
+                "1" : {
+                    "commandName" : "getName",
+                    "nparams" : 0.000000
+                    },
+                "10" : {
+                    "commandName" : "setCountryCode",
+                    "nparams" : 1.000000,
+                    "paramsSig" : "p1"
+                    },
+                "11" : {
+                    "commandName" : "update",
+                    "nparams" : 0.000000
+                    },
+                "2" : {
+                    "commandName" : "setCalendar",
+                    "nparams" : 1.000000,
+                    "paramsSig" : "p1"
+                    },
+                "3" : {
+                    "commandName" : "refreshUpdateStatus",
+                    "nparams" : 0.000000
+                    },
+                "4" : {
+                    "commandName" : "refreshPodMode",
+                    "nparams" : 0.000000
+                    },
+                "5" : {
+                    "commandName" : "activateCalendar",
+                    "nparams" : 0.000000
+                    },
+                "6" : {
+                    "commandName" : "setPodLedOn",
+                    "nparams" : 0.000000
+                    },
+                "7" : {
+                    "commandName" : "setPodLedOff",
+                    "nparams" : 0.000000
+                    },
+                "8" : {
+                    "commandName" : "setLightingLedPodMode",
+                    "nparams" : 1.000000,
+                    "paramsSig" : "p1"
+                    },
+                "9" : {
+                    "commandName" : "deactivateCalendar",
+                    "nparams" : 0.000000
+                    }
+                ],
+            "states" : [
+                "1" : {
+                    "name" : "core:LocalAccessProofState"
+                    },
+                "2" : {
+                    "name" : "internal:Button3State"
+                    },
+                "3" : {
+                    "name" : "internal:Button2State"
+                    },
+                "4" : {
+                    "name" : "internal:Button1State"
+                    },
+                "5" : {
+                    "name" : "core:LocalIPv4AddressState"
+                    },
+                "6" : {
+                    "name" : "core:ConnectivityState"
+                    },
+                "7" : {
+                    "name" : "internal:LightingLedPodModeState"
+                    },
+                "8" : {
+                    "name" : "core:NameState"
+                    },
+                "9" : {
+                    "name" : "core:CountryCodeState"
+                    }
+                ],
+            "type" : "ACTUATOR",
+            "uiClass" : "Pod",
+            "widgetName" : "Pod"
+            },
+        "deviceURL" : "internal:\/\/2078-2038-9817\/pod\/0",
+        "enabled" : true,
+        "label" : "Box",
+        "states" : [
+            "1" : {
+                "name" : "core:CountryCodeState",
+                "type" : 3.000000,
+                "value" : "DE"
+                },
+            "2" : {
+                "name" : "core:ConnectivityState",
+                "type" : 3.000000,
+                "value" : "online"
+                },
+            "3" : {
+                "name" : "core:NameState",
+                "type" : 3.000000,
+                "value" : "Box"
+                },
+            "4" : {
+                "name" : "internal:LightingLedPodModeState",
+                "type" : 1.000000,
+                "value" : 1.000000
+                },
+            "5" : {
+                "name" : "core:LocalIPv4AddressState",
+                "type" : 3.000000,
+                "value" : "192.168.1.34"
+                }
+            ],
+        "subsystemId" : 0.000000,
+        "synced" : true,
+        "type" : 1.000000
+        },
+    "4" : {
+        "attributes" : [
+            "1" : {
+                "name" : "core:SupportedManufacturerSettingsCommands",
+                "type" : 10.000000,
+                "value" : [
+                    "1" : "delete_my_position",
+                    "2" : "double_power_cut",
+                    "3" : "reset_actuator",
+                    "4" : "save_my_position",
+                    "5" : "set_timeout_timer",
+                    "6" : "set_timeout_timer_value"
+                    ]
+                },
+            "2" : {
+                "name" : "core:FirmwareRevision",
+                "type" : 3.000000,
+                "value" : "5133033A02"
+                },
+            "3" : {
+                "name" : "core:Manufacturer",
+                "type" : 3.000000,
+                "value" : "Somfy"
+                },
+            "4" : {
+                "name" : "core:SupportedReadableManufacturerData",
+                "type" : 10.000000,
+                "value" : [
+                    "1" : "current_position",
+                    "2" : "setting_state",
+                    "3" : "timeout_timer",
+                    "4" : "timeout_timer_value"
+                    ]
+                },
+            "5" : {
+                "name" : "core:SupportedManufacturerProcedures",
+                "type" : 10.000000,
+                "value" : [
+                    "1" : {
+                        "procedureName" : "delete_my_position"
+                        },
+                    "2" : {
+                        "procedureName" : "double_power_cut"
+                        },
+                    "3" : {
+                        "procedureName" : "reset_actuator"
+                        },
+                    "4" : {
+                        "procedureName" : "save_my_position"
+                        }
+                    ]
+                }
+            ],
+        "available" : false,
+        "controllableName" : "io:DimmableLightIOComponent",
+        "definition" : {
+            "attributes" : [
+                "1" : {
+                    "name" : "core:SupportedManufacturerSettingsCommands"
+                    },
+                "2" : {
+                    "name" : "core:FirmwareRevision"
+                    },
+                "3" : {
+                    "name" : "core:Manufacturer"
+                    },
+                "4" : {
+                    "name" : "core:SupportedReadableManufacturerData"
+                    },
+                "5" : {
+                    "name" : "core:SupportedManufacturerProcedures"
+                    }
+                ],
+            "commands" : [
+                "1" : {
+                    "commandName" : "off",
+                    "nparams" : 0.000000
+                    },
+                "10" : {
+                    "commandName" : "unpairOneWayController",
+                    "nparams" : 1.000000,
+                    "paramsSig" : "p1,*p2"
+                    },
+                "11" : {
+                    "commandName" : "stopIdentify",
+                    "nparams" : 0.000000
+                    },
+                "12" : {
+                    "commandName" : "sendIOKey",
+                    "nparams" : 0.000000
+                    },
+                "13" : {
+                    "commandName" : "unpairAllOneWayControllersAndDeleteNode",
+                    "nparams" : 0.000000
+                    },
+                "14" : {
+                    "commandName" : "setSecuredPosition",
+                    "nparams" : 1.000000,
+                    "paramsSig" : "p1"
+                    },
+                "15" : {
+                    "commandName" : "setPosition",
+                    "nparams" : 1.000000,
+                    "paramsSig" : "p1"
+                    },
+                "16" : {
+                    "commandName" : "setMemorized1Position",
+                    "nparams" : 1.000000,
+                    "paramsSig" : "p1"
+                    },
+                "17" : {
+                    "commandName" : "refreshMemorized1Position",
+                    "nparams" : 0.000000
+                    },
+                "18" : {
+                    "commandName" : "runManufacturerSettingsCommand",
+                    "nparams" : 2.000000,
+                    "paramsSig" : "p1,p2"
+                    },
+                "19" : {
+                    "commandName" : "keepOneWayControllersAndDeleteNode",
+                    "nparams" : 0.000000
+                    },
+                "2" : {
+                    "commandName" : "identify",
+                    "nparams" : 0.000000
+                    },
+                "20" : {
+                    "commandName" : "resetLockLevels",
+                    "nparams" : 0.000000
+                    },
+                "21" : {
+                    "commandName" : "removeLockLevel",
+                    "nparams" : 1.000000,
+                    "paramsSig" : "p1"
+                    },
+                "22" : {
+                    "commandName" : "readManufacturerData",
+                    "nparams" : 1.000000,
+                    "paramsSig" : "p1"
+                    },
+                "23" : {
+                    "commandName" : "advancedRefresh",
+                    "nparams" : 1.000000,
+                    "paramsSig" : "p1,*p2"
+                    },
+                "24" : {
+                    "commandName" : "getName",
+                    "nparams" : 0.000000
+                    },
+                "25" : {
+                    "commandName" : "setOnOff",
+                    "nparams" : 1.000000,
+                    "paramsSig" : "p1"
+                    },
+                "26" : {
+                    "commandName" : "addLockLevel",
+                    "nparams" : 1.000000,
+                    "paramsSig" : "p1,*p2"
+                    },
+                "27" : {
+                    "commandName" : "executeManufacturerProcedure",
+                    "nparams" : 1.000000,
+                    "paramsSig" : "p1,*p2"
+                    },
+                "28" : {
+                    "commandName" : "writeManufacturerData",
+                    "nparams" : 1.000000,
+                    "paramsSig" : "p1"
+                    },
+                "29" : {
+                    "commandName" : "wink",
+                    "nparams" : 1.000000,
+                    "paramsSig" : "p1"
+                    },
+                "3" : {
+                    "commandName" : "setName",
+                    "nparams" : 1.000000,
+                    "paramsSig" : "p1"
+                    },
+                "30" : {
+                    "commandName" : "setIntensity",
+                    "nparams" : 1.000000,
+                    "paramsSig" : "p1"
+                    },
+                "31" : {
+                    "commandName" : "onWithTimer",
+                    "nparams" : 1.000000,
+                    "paramsSig" : "p1"
+                    },
+                "32" : {
+                    "commandName" : "setIntensityWithTimer",
+                    "nparams" : 2.000000,
+                    "paramsSig" : "p1,p2,*p3"
+                    },
+                "33" : {
+                    "commandName" : "on",
+                    "nparams" : 0.000000
+                    },
+                "4" : {
+                    "commandName" : "my",
+                    "nparams" : 0.000000
+                    },
+                "5" : {
+                    "commandName" : "setConfigState",
+                    "nparams" : 1.000000,
+                    "paramsSig" : "p1"
+                    },
+                "6" : {
+                    "commandName" : "unpairAllOneWayControllers",
+                    "nparams" : 0.000000
+                    },
+                "7" : {
+                    "commandName" : "startIdentify",
+                    "nparams" : 0.000000
+                    },
+                "8" : {
+                    "commandName" : "pairOneWayController",
+                    "nparams" : 1.000000,
+                    "paramsSig" : "p1,*p2"
+                    },
+                "9" : {
+                    "commandName" : "delayedStopIdentify",
+                    "nparams" : 1.000000,
+                    "paramsSig" : "p1"
+                    }
+                ],
+            "states" : [
+                "1" : {
+                    "name" : "core:Memorized1PositionState"
+                    },
+                "10" : {
+                    "name" : "core:ManufacturerDiagnosticsState"
+                    },
+                "11" : {
+                    "name" : "core:CommandLockLevelsState"
+                    },
+                "12" : {
+                    "name" : "core:StatusState"
+                    },
+                "13" : {
+                    "name" : "core:NameState"
+                    },
+                "14" : {
+                    "name" : "core:DiscreteRSSILevelState"
+                    },
+                "15" : {
+                    "name" : "core:RSSILevelState"
+                    },
+                "2" : {
+                    "name" : "core:AdditionalStatusState"
+                    },
+                "3" : {
+                    "name" : "core:ManufacturerSettingsState"
+                    },
+                "4" : {
+                    "name" : "core:SecuredPositionState"
+                    },
+                "5" : {
+                    "name" : "core:LightIntensityState"
+                    },
+                "6" : {
+                    "name" : "core:OnOffState"
+                    },
+                "7" : {
+                    "name" : "io:PriorityLockLevelState"
+                    },
+                "8" : {
+                    "name" : "core:PriorityLockTimerState"
+                    },
+                "9" : {
+                    "name" : "io:PriorityLockOriginatorState"
+                    }
+                ],
+            "type" : "ACTUATOR",
+            "uiClass" : "Light",
+            "widgetName" : "DimmerLight"
+            },
+        "deviceURL" : "io:\/\/2078-2038-9817\/13455910",
+        "enabled" : true,
+        "label" : "LightVar_Wh_io",
+        "states" : [
+            "1" : {
+                "name" : "core:CommandLockLevelsState",
+                "type" : 11.000000,
+                "value" : [
+                    ]
+                },
+            "2" : {
+                "name" : "core:DiscreteRSSILevelState",
+                "type" : 3.000000,
+                "value" : "good"
+                },
+            "3" : {
+                "name" : "core:RSSILevelState",
+                "type" : 1.000000,
+                "value" : 98.000000
+                },
+            "4" : {
+                "name" : "core:ManufacturerSettingsState",
+                "type" : 11.000000,
+                "value" : {
+                    "current_position" : 51200.000000
+                    }
+                },
+            "5" : {
+                "name" : "core:LightIntensityState",
+                "type" : 1.000000,
+                "value" : 0.000000
+                },
+            "6" : {
+                "name" : "core:OnOffState",
+                "type" : 3.000000,
+                "value" : "off"
+                },
+            "7" : {
+                "name" : "core:StatusState",
+                "type" : 3.000000,
+                "value" : "unavailable"
+                },
+            "8" : {
+                "name" : "core:NameState",
+                "type" : 3.000000,
+                "value" : "LightVar_Wh_io"
+                },
+            "9" : {
+                "name" : "core:Memorized1PositionState",
+                "type" : 1.000000,
+                "value" : 50.000000
+                }
+            ],
+        "subsystemId" : 0.000000,
+        "synced" : true,
+        "type" : 1.000000
+        },
+    "5" : {
+        "attributes" : [
+            "1" : {
+                "name" : "core:SupportedManufacturerSettingsCommands",
+                "type" : 10.000000,
+                "value" : [
+                    "1" : "delete_my_position",
+                    "2" : "double_power_cut",
+                    "3" : "reset_actuator",
+                    "4" : "save_my_position",
+                    "5" : "set_timeout_timer",
+                    "6" : "set_timeout_timer_value"
+                    ]
+                },
+            "2" : {
+                "name" : "core:FirmwareRevision",
+                "type" : 3.000000,
+                "value" : "5133033A02"
+                },
+            "3" : {
+                "name" : "core:Manufacturer",
+                "type" : 3.000000,
+                "value" : "Somfy"
+                },
+            "4" : {
+                "name" : "core:SupportedReadableManufacturerData",
+                "type" : 10.000000,
+                "value" : [
+                    "1" : "current_position",
+                    "2" : "setting_state",
+                    "3" : "timeout_timer",
+                    "4" : "timeout_timer_value"
+                    ]
+                },
+            "5" : {
+                "name" : "core:SupportedManufacturerProcedures",
+                "type" : 10.000000,
+                "value" : [
+                    "1" : {
+                        "procedureName" : "delete_my_position"
+                        },
+                    "2" : {
+                        "procedureName" : "double_power_cut"
+                        },
+                    "3" : {
+                        "procedureName" : "reset_actuator"
+                        },
+                    "4" : {
+                        "procedureName" : "save_my_position"
+                        }
+                    ]
+                }
+            ],
+        "available" : false,
+        "controllableName" : "io:DimmableLightIOComponent",
+        "definition" : {
+            "attributes" : [
+                "1" : {
+                    "name" : "core:SupportedManufacturerSettingsCommands"
+                    },
+                "2" : {
+                    "name" : "core:FirmwareRevision"
+                    },
+                "3" : {
+                    "name" : "core:Manufacturer"
+                    },
+                "4" : {
+                    "name" : "core:SupportedReadableManufacturerData"
+                    },
+                "5" : {
+                    "name" : "core:SupportedManufacturerProcedures"
+                    }
+                ],
+            "commands" : [
+                "1" : {
+                    "commandName" : "off",
+                    "nparams" : 0.000000
+                    },
+                "10" : {
+                    "commandName" : "unpairOneWayController",
+                    "nparams" : 1.000000,
+                    "paramsSig" : "p1,*p2"
+                    },
+                "11" : {
+                    "commandName" : "stopIdentify",
+                    "nparams" : 0.000000
+                    },
+                "12" : {
+                    "commandName" : "sendIOKey",
+                    "nparams" : 0.000000
+                    },
+                "13" : {
+                    "commandName" : "unpairAllOneWayControllersAndDeleteNode",
+                    "nparams" : 0.000000
+                    },
+                "14" : {
+                    "commandName" : "setSecuredPosition",
+                    "nparams" : 1.000000,
+                    "paramsSig" : "p1"
+                    },
+                "15" : {
+                    "commandName" : "setPosition",
+                    "nparams" : 1.000000,
+                    "paramsSig" : "p1"
+                    },
+                "16" : {
+                    "commandName" : "setMemorized1Position",
+                    "nparams" : 1.000000,
+                    "paramsSig" : "p1"
+                    },
+                "17" : {
+                    "commandName" : "refreshMemorized1Position",
+                    "nparams" : 0.000000
+                    },
+                "18" : {
+                    "commandName" : "runManufacturerSettingsCommand",
+                    "nparams" : 2.000000,
+                    "paramsSig" : "p1,p2"
+                    },
+                "19" : {
+                    "commandName" : "keepOneWayControllersAndDeleteNode",
+                    "nparams" : 0.000000
+                    },
+                "2" : {
+                    "commandName" : "identify",
+                    "nparams" : 0.000000
+                    },
+                "20" : {
+                    "commandName" : "resetLockLevels",
+                    "nparams" : 0.000000
+                    },
+                "21" : {
+                    "commandName" : "removeLockLevel",
+                    "nparams" : 1.000000,
+                    "paramsSig" : "p1"
+                    },
+                "22" : {
+                    "commandName" : "readManufacturerData",
+                    "nparams" : 1.000000,
+                    "paramsSig" : "p1"
+                    },
+                "23" : {
+                    "commandName" : "advancedRefresh",
+                    "nparams" : 1.000000,
+                    "paramsSig" : "p1,*p2"
+                    },
+                "24" : {
+                    "commandName" : "getName",
+                    "nparams" : 0.000000
+                    },
+                "25" : {
+                    "commandName" : "setOnOff",
+                    "nparams" : 1.000000,
+                    "paramsSig" : "p1"
+                    },
+                "26" : {
+                    "commandName" : "addLockLevel",
+                    "nparams" : 1.000000,
+                    "paramsSig" : "p1,*p2"
+                    },
+                "27" : {
+                    "commandName" : "executeManufacturerProcedure",
+                    "nparams" : 1.000000,
+                    "paramsSig" : "p1,*p2"
+                    },
+                "28" : {
+                    "commandName" : "writeManufacturerData",
+                    "nparams" : 1.000000,
+                    "paramsSig" : "p1"
+                    },
+                "29" : {
+                    "commandName" : "wink",
+                    "nparams" : 1.000000,
+                    "paramsSig" : "p1"
+                    },
+                "3" : {
+                    "commandName" : "setName",
+                    "nparams" : 1.000000,
+                    "paramsSig" : "p1"
+                    },
+                "30" : {
+                    "commandName" : "setIntensity",
+                    "nparams" : 1.000000,
+                    "paramsSig" : "p1"
+                    },
+                "31" : {
+                    "commandName" : "onWithTimer",
+                    "nparams" : 1.000000,
+                    "paramsSig" : "p1"
+                    },
+                "32" : {
+                    "commandName" : "setIntensityWithTimer",
+                    "nparams" : 2.000000,
+                    "paramsSig" : "p1,p2,*p3"
+                    },
+                "33" : {
+                    "commandName" : "on",
+                    "nparams" : 0.000000
+                    },
+                "4" : {
+                    "commandName" : "my",
+                    "nparams" : 0.000000
+                    },
+                "5" : {
+                    "commandName" : "setConfigState",
+                    "nparams" : 1.000000,
+                    "paramsSig" : "p1"
+                    },
+                "6" : {
+                    "commandName" : "unpairAllOneWayControllers",
+                    "nparams" : 0.000000
+                    },
+                "7" : {
+                    "commandName" : "startIdentify",
+                    "nparams" : 0.000000
+                    },
+                "8" : {
+                    "commandName" : "pairOneWayController",
+                    "nparams" : 1.000000,
+                    "paramsSig" : "p1,*p2"
+                    },
+                "9" : {
+                    "commandName" : "delayedStopIdentify",
+                    "nparams" : 1.000000,
+                    "paramsSig" : "p1"
+                    }
+                ],
+            "states" : [
+                "1" : {
+                    "name" : "core:Memorized1PositionState"
+                    },
+                "10" : {
+                    "name" : "core:ManufacturerDiagnosticsState"
+                    },
+                "11" : {
+                    "name" : "core:CommandLockLevelsState"
+                    },
+                "12" : {
+                    "name" : "core:StatusState"
+                    },
+                "13" : {
+                    "name" : "core:NameState"
+                    },
+                "14" : {
+                    "name" : "core:DiscreteRSSILevelState"
+                    },
+                "15" : {
+                    "name" : "core:RSSILevelState"
+                    },
+                "2" : {
+                    "name" : "core:AdditionalStatusState"
+                    },
+                "3" : {
+                    "name" : "core:ManufacturerSettingsState"
+                    },
+                "4" : {
+                    "name" : "core:SecuredPositionState"
+                    },
+                "5" : {
+                    "name" : "core:LightIntensityState"
+                    },
+                "6" : {
+                    "name" : "core:OnOffState"
+                    },
+                "7" : {
+                    "name" : "io:PriorityLockLevelState"
+                    },
+                "8" : {
+                    "name" : "core:PriorityLockTimerState"
+                    },
+                "9" : {
+                    "name" : "io:PriorityLockOriginatorState"
+                    }
+                ],
+            "type" : "ACTUATOR",
+            "uiClass" : "Light",
+            "widgetName" : "DimmerLight"
+            },
+        "deviceURL" : "io:\/\/2078-2038-9817\/7612651",
+        "enabled" : true,
+        "label" : "LightVar_Wh_io",
+        "states" : [
+            "1" : {
+                "name" : "core:CommandLockLevelsState",
+                "type" : 11.000000,
+                "value" : [
+                    ]
+                },
+            "2" : {
+                "name" : "core:DiscreteRSSILevelState",
+                "type" : 3.000000,
+                "value" : "good"
+                },
+            "3" : {
+                "name" : "core:RSSILevelState",
+                "type" : 1.000000,
+                "value" : 100.000000
+                },
+            "4" : {
+                "name" : "core:ManufacturerSettingsState",
+                "type" : 11.000000,
+                "value" : {
+                    "current_position" : 51200.000000
+                    }
+                },
+            "5" : {
+                "name" : "core:LightIntensityState",
+                "type" : 1.000000,
+                "value" : 0.000000
+                },
+            "6" : {
+                "name" : "core:OnOffState",
+                "type" : 3.000000,
+                "value" : "off"
+                },
+            "7" : {
+                "name" : "core:StatusState",
+                "type" : 3.000000,
+                "value" : "unavailable"
+                },
+            "8" : {
+                "name" : "core:NameState",
+                "type" : 3.000000,
+                "value" : "LightVar_Wh_io"
+                },
+            "9" : {
+                "name" : "core:Memorized1PositionState",
+                "type" : 1.000000,
+                "value" : 50.000000
+                }
+            ],
+        "subsystemId" : 0.000000,
+        "synced" : true,
+        "type" : 1.000000
+        },
+    "6" : {
+        "attributes" : [
+            "1" : {
+                "name" : "core:SupportedAliases",
+                "type" : 10.000000,
+                "value" : [
+                    "1" : {
+                        "features" : [
+                            "1" : "openClosePosition"
+                            ],
+                        "id" : "55299",
+                        "type" : "ventilation"
+                        }
+                    ]
+                },
+            "2" : {
+                "name" : "core:FirmwareRevision",
+                "type" : 3.000000,
+                "value" : "0000000000000000F303"
+                },
+            "3" : {
+                "name" : "io:Features",
+                "type" : 10.000000,
+                "value" : [
+                    "1" : {
+                        "name" : "alias"
+                        },
+                    "2" : {
+                        "name" : "openClosePosition"
+                        }
+                    ]
+                },
+            "4" : {
+                "name" : "core:Manufacturer",
+                "type" : 3.000000,
+                "value" : "VELUX"
+                }
+            ],
+        "available" : true,
+        "controllableName" : "io:WindowOpenerVeluxIOComponent",
+        "definition" : {
+            "attributes" : [
+                "1" : {
+                    "name" : "core:SupportedAliases"
+                    },
+                "2" : {
+                    "name" : "core:FirmwareRevision"
+                    },
+                "3" : {
+                    "name" : "io:Features"
+                    },
+                "4" : {
+                    "name" : "core:Manufacturer"
+                    }
+                ],
+            "commands" : [
+                "1" : {
+                    "commandName" : "setClosureAndLinearSpeed",
+                    "nparams" : 1.000000,
+                    "paramsSig" : "p1,*p2"
+                    },
+                "10" : {
+                    "commandName" : "advancedRefresh",
+                    "nparams" : 1.000000,
+                    "paramsSig" : "p1,*p2"
+                    },
+                "11" : {
+                    "commandName" : "getName",
+                    "nparams" : 0.000000
+                    },
+                "12" : {
+                    "commandName" : "delayedStopIdentify",
+                    "nparams" : 1.000000,
+                    "paramsSig" : "p1"
+                    },
+                "13" : {
+                    "commandName" : "unpairOneWayController",
+                    "nparams" : 1.000000,
+                    "paramsSig" : "p1,*p2"
+                    },
+                "14" : {
+                    "commandName" : "stopIdentify",
+                    "nparams" : 0.000000
+                    },
+                "15" : {
+                    "commandName" : "goToAlias",
+                    "nparams" : 1.000000,
+                    "paramsSig" : "p1"
+                    },
+                "16" : {
+                    "commandName" : "wink",
+                    "nparams" : 1.000000,
+                    "paramsSig" : "p1"
+                    },
+                "17" : {
+                    "commandName" : "saveAlias",
+                    "nparams" : 1.000000,
+                    "paramsSig" : "p1"
+                    },
+                "18" : {
+                    "commandName" : "addLockLevel",
+                    "nparams" : 1.000000,
+                    "paramsSig" : "p1,*p2"
+                    },
+                "19" : {
+                    "commandName" : "resetLockLevels",
+                    "nparams" : 0.000000
+                    },
+                "2" : {
+                    "commandName" : "setPositionAndLinearSpeed",
+                    "nparams" : 1.000000,
+                    "paramsSig" : "p1,*p2"
+                    },
+                "20" : {
+                    "commandName" : "removeLockLevel",
+                    "nparams" : 1.000000,
+                    "paramsSig" : "p1"
+                    },
+                "21" : {
+                    "commandName" : "close",
+                    "nparams" : 0.000000
+                    },
+                "22" : {
+                    "commandName" : "startIdentify",
+                    "nparams" : 0.000000
+                    },
+                "23" : {
+                    "commandName" : "pairOneWayController",
+                    "nparams" : 1.000000,
+                    "paramsSig" : "p1,*p2"
+                    },
+                "3" : {
+                    "commandName" : "open",
+                    "nparams" : 0.000000
+                    },
+                "4" : {
+                    "commandName" : "stop",
+                    "nparams" : 0.000000
+                    },
+                "5" : {
+                    "commandName" : "identify",
+                    "nparams" : 0.000000
+                    },
+                "6" : {
+                    "commandName" : "setName",
+                    "nparams" : 1.000000,
+                    "paramsSig" : "p1"
+                    },
+                "7" : {
+                    "commandName" : "setClosure",
+                    "nparams" : 1.000000,
+                    "paramsSig" : "p1"
+                    },
+                "8" : {
+                    "commandName" : "setConfigState",
+                    "nparams" : 1.000000,
+                    "paramsSig" : "p1"
+                    },
+                "9" : {
+                    "commandName" : "unpairAllOneWayControllers",
+                    "nparams" : 0.000000
+                    }
+                ],
+            "states" : [
+                "1" : {
+                    "name" : "core:CommandLockLevelsState"
+                    },
+                "10" : {
+                    "name" : "core:RSSILevelState"
+                    },
+                "11" : {
+                    "name" : "core:ClosureState"
+                    },
+                "12" : {
+                    "name" : "core:OpenClosedState"
+                    },
+                "2" : {
+                    "name" : "core:PriorityLockTimerState"
+                    },
+                "3" : {
+                    "name" : "io:PriorityLockLevelState"
+                    },
+                "4" : {
+                    "name" : "io:PriorityLockOriginatorState"
+                    },
+                "5" : {
+                    "name" : "core:ReachedAliasesState"
+                    },
+                "6" : {
+                    "name" : "core:StatusState"
+                    },
+                "7" : {
+                    "name" : "core:NameState"
+                    },
+                "8" : {
+                    "name" : "core:BatteryDiscreteLevelState"
+                    },
+                "9" : {
+                    "name" : "core:DiscreteRSSILevelState"
+                    }
+                ],
+            "type" : "ACTUATOR",
+            "uiClass" : "Window",
+            "widgetName" : "PositionableTiltedWindow"
+            },
+        "deviceURL" : "io:\/\/2078-2038-9817\/6244458",
+        "enabled" : true,
+        "label" : "Dachfenster",
+        "states" : [
+            "1" : {
+                "name" : "core:DiscreteRSSILevelState",
+                "type" : 3.000000,
+                "value" : "good"
+                },
+            "2" : {
+                "name" : "core:RSSILevelState",
+                "type" : 1.000000,
+                "value" : 100.000000
+                },
+            "3" : {
+                "name" : "core:ClosureState",
+                "type" : 1.000000,
+                "value" : 100.000000
+                },
+            "4" : {
+                "name" : "core:OpenClosedState",
+                "type" : 3.000000,
+                "value" : "closed"
+                },
+            "5" : {
+                "name" : "core:ReachedAliasesState",
+                "type" : 11.000000,
+                "value" : [
+                    ]
+                },
+            "6" : {
+                "name" : "core:StatusState",
+                "type" : 3.000000,
+                "value" : "available"
+                },
+            "7" : {
+                "name" : "core:CommandLockLevelsState",
+                "type" : 11.000000,
+                "value" : [
+                    ]
+                },
+            "8" : {
+                "name" : "core:NameState",
+                "type" : 3.000000,
+                "value" : "Dachfenster"
+                }
+            ],
+        "subsystemId" : 0.000000,
+        "synced" : true,
+        "type" : 1.000000
+        },
+    "7" : {
+        "attributes" : [
+            "1" : {
+                "name" : "core:SupportedManufacturerSettingsCommands",
+                "type" : 10.000000,
+                "value" : [
+                    "1" : "delete_my_position",
+                    "2" : "double_power_cut",
+                    "3" : "reset_actuator",
+                    "4" : "save_my_position",
+                    "5" : "set_timeout_timer",
+                    "6" : "set_timeout_timer_value"
+                    ]
+                },
+            "2" : {
+                "name" : "core:FirmwareRevision",
+                "type" : 3.000000,
+                "value" : "5133033A02"
+                },
+            "3" : {
+                "name" : "core:Manufacturer",
+                "type" : 3.000000,
+                "value" : "Somfy"
+                },
+            "4" : {
+                "name" : "core:SupportedReadableManufacturerData",
+                "type" : 10.000000,
+                "value" : [
+                    "1" : "current_position",
+                    "2" : "setting_state",
+                    "3" : "timeout_timer",
+                    "4" : "timeout_timer_value"
+                    ]
+                },
+            "5" : {
+                "name" : "core:SupportedManufacturerProcedures",
+                "type" : 10.000000,
+                "value" : [
+                    "1" : {
+                        "procedureName" : "delete_my_position"
+                        },
+                    "2" : {
+                        "procedureName" : "double_power_cut"
+                        },
+                    "3" : {
+                        "procedureName" : "reset_actuator"
+                        },
+                    "4" : {
+                        "procedureName" : "save_my_position"
+                        }
+                    ]
+                }
+            ],
+        "available" : false,
+        "controllableName" : "io:DimmableLightIOComponent",
+        "definition" : {
+            "attributes" : [
+                "1" : {
+                    "name" : "core:SupportedManufacturerSettingsCommands"
+                    },
+                "2" : {
+                    "name" : "core:FirmwareRevision"
+                    },
+                "3" : {
+                    "name" : "core:Manufacturer"
+                    },
+                "4" : {
+                    "name" : "core:SupportedReadableManufacturerData"
+                    },
+                "5" : {
+                    "name" : "core:SupportedManufacturerProcedures"
+                    }
+                ],
+            "commands" : [
+                "1" : {
+                    "commandName" : "off",
+                    "nparams" : 0.000000
+                    },
+                "10" : {
+                    "commandName" : "unpairOneWayController",
+                    "nparams" : 1.000000,
+                    "paramsSig" : "p1,*p2"
+                    },
+                "11" : {
+                    "commandName" : "stopIdentify",
+                    "nparams" : 0.000000
+                    },
+                "12" : {
+                    "commandName" : "sendIOKey",
+                    "nparams" : 0.000000
+                    },
+                "13" : {
+                    "commandName" : "unpairAllOneWayControllersAndDeleteNode",
+                    "nparams" : 0.000000
+                    },
+                "14" : {
+                    "commandName" : "setSecuredPosition",
+                    "nparams" : 1.000000,
+                    "paramsSig" : "p1"
+                    },
+                "15" : {
+                    "commandName" : "setPosition",
+                    "nparams" : 1.000000,
+                    "paramsSig" : "p1"
+                    },
+                "16" : {
+                    "commandName" : "setMemorized1Position",
+                    "nparams" : 1.000000,
+                    "paramsSig" : "p1"
+                    },
+                "17" : {
+                    "commandName" : "refreshMemorized1Position",
+                    "nparams" : 0.000000
+                    },
+                "18" : {
+                    "commandName" : "runManufacturerSettingsCommand",
+                    "nparams" : 2.000000,
+                    "paramsSig" : "p1,p2"
+                    },
+                "19" : {
+                    "commandName" : "keepOneWayControllersAndDeleteNode",
+                    "nparams" : 0.000000
+                    },
+                "2" : {
+                    "commandName" : "identify",
+                    "nparams" : 0.000000
+                    },
+                "20" : {
+                    "commandName" : "resetLockLevels",
+                    "nparams" : 0.000000
+                    },
+                "21" : {
+                    "commandName" : "removeLockLevel",
+                    "nparams" : 1.000000,
+                    "paramsSig" : "p1"
+                    },
+                "22" : {
+                    "commandName" : "readManufacturerData",
+                    "nparams" : 1.000000,
+                    "paramsSig" : "p1"
+                    },
+                "23" : {
+                    "commandName" : "advancedRefresh",
+                    "nparams" : 1.000000,
+                    "paramsSig" : "p1,*p2"
+                    },
+                "24" : {
+                    "commandName" : "getName",
+                    "nparams" : 0.000000
+                    },
+                "25" : {
+                    "commandName" : "setOnOff",
+                    "nparams" : 1.000000,
+                    "paramsSig" : "p1"
+                    },
+                "26" : {
+                    "commandName" : "addLockLevel",
+                    "nparams" : 1.000000,
+                    "paramsSig" : "p1,*p2"
+                    },
+                "27" : {
+                    "commandName" : "executeManufacturerProcedure",
+                    "nparams" : 1.000000,
+                    "paramsSig" : "p1,*p2"
+                    },
+                "28" : {
+                    "commandName" : "writeManufacturerData",
+                    "nparams" : 1.000000,
+                    "paramsSig" : "p1"
+                    },
+                "29" : {
+                    "commandName" : "wink",
+                    "nparams" : 1.000000,
+                    "paramsSig" : "p1"
+                    },
+                "3" : {
+                    "commandName" : "setName",
+                    "nparams" : 1.000000,
+                    "paramsSig" : "p1"
+                    },
+                "30" : {
+                    "commandName" : "setIntensity",
+                    "nparams" : 1.000000,
+                    "paramsSig" : "p1"
+                    },
+                "31" : {
+                    "commandName" : "onWithTimer",
+                    "nparams" : 1.000000,
+                    "paramsSig" : "p1"
+                    },
+                "32" : {
+                    "commandName" : "setIntensityWithTimer",
+                    "nparams" : 2.000000,
+                    "paramsSig" : "p1,p2,*p3"
+                    },
+                "33" : {
+                    "commandName" : "on",
+                    "nparams" : 0.000000
+                    },
+                "4" : {
+                    "commandName" : "my",
+                    "nparams" : 0.000000
+                    },
+                "5" : {
+                    "commandName" : "setConfigState",
+                    "nparams" : 1.000000,
+                    "paramsSig" : "p1"
+                    },
+                "6" : {
+                    "commandName" : "unpairAllOneWayControllers",
+                    "nparams" : 0.000000
+                    },
+                "7" : {
+                    "commandName" : "startIdentify",
+                    "nparams" : 0.000000
+                    },
+                "8" : {
+                    "commandName" : "pairOneWayController",
+                    "nparams" : 1.000000,
+                    "paramsSig" : "p1,*p2"
+                    },
+                "9" : {
+                    "commandName" : "delayedStopIdentify",
+                    "nparams" : 1.000000,
+                    "paramsSig" : "p1"
+                    }
+                ],
+            "states" : [
+                "1" : {
+                    "name" : "core:Memorized1PositionState"
+                    },
+                "10" : {
+                    "name" : "core:ManufacturerDiagnosticsState"
+                    },
+                "11" : {
+                    "name" : "core:CommandLockLevelsState"
+                    },
+                "12" : {
+                    "name" : "core:StatusState"
+                    },
+                "13" : {
+                    "name" : "core:NameState"
+                    },
+                "14" : {
+                    "name" : "core:DiscreteRSSILevelState"
+                    },
+                "15" : {
+                    "name" : "core:RSSILevelState"
+                    },
+                "2" : {
+                    "name" : "core:AdditionalStatusState"
+                    },
+                "3" : {
+                    "name" : "core:ManufacturerSettingsState"
+                    },
+                "4" : {
+                    "name" : "core:SecuredPositionState"
+                    },
+                "5" : {
+                    "name" : "core:LightIntensityState"
+                    },
+                "6" : {
+                    "name" : "core:OnOffState"
+                    },
+                "7" : {
+                    "name" : "io:PriorityLockLevelState"
+                    },
+                "8" : {
+                    "name" : "core:PriorityLockTimerState"
+                    },
+                "9" : {
+                    "name" : "io:PriorityLockOriginatorState"
+                    }
+                ],
+            "type" : "ACTUATOR",
+            "uiClass" : "Light",
+            "widgetName" : "DimmerLight"
+            },
+        "deviceURL" : "io:\/\/2078-2038-9817\/8549282",
+        "enabled" : true,
+        "label" : "LightVar_Wh_io",
+        "states" : [
+            "1" : {
+                "name" : "core:CommandLockLevelsState",
+                "type" : 11.000000,
+                "value" : [
+                    ]
+                },
+            "2" : {
+                "name" : "core:DiscreteRSSILevelState",
+                "type" : 3.000000,
+                "value" : "good"
+                },
+            "3" : {
+                "name" : "core:RSSILevelState",
+                "type" : 1.000000,
+                "value" : 100.000000
+                },
+            "4" : {
+                "name" : "core:ManufacturerSettingsState",
+                "type" : 11.000000,
+                "value" : {
+                    "current_position" : 51200.000000
+                    }
+                },
+            "5" : {
+                "name" : "core:LightIntensityState",
+                "type" : 1.000000,
+                "value" : 0.000000
+                },
+            "6" : {
+                "name" : "core:OnOffState",
+                "type" : 3.000000,
+                "value" : "off"
+                },
+            "7" : {
+                "name" : "core:StatusState",
+                "type" : 3.000000,
+                "value" : "unavailable"
+                },
+            "8" : {
+                "name" : "core:NameState",
+                "type" : 3.000000,
+                "value" : "LightVar_Wh_io"
+                },
+            "9" : {
+                "name" : "core:Memorized1PositionState",
+                "type" : 1.000000,
+                "value" : 50.000000
+                }
+            ],
+        "subsystemId" : 0.000000,
+        "synced" : true,
+        "type" : 1.000000
+        },
+    "8" : {
+        "attributes" : [
+            ],
+        "available" : true,
+        "controllableName" : "internal:WifiComponent",
+        "definition" : {
+            "attributes" : [
+                ],
+            "commands" : [
+                "1" : {
+                    "commandName" : "setTargetInfraConfig",
+                    "nparams" : 2.000000,
+                    "paramsSig" : "p1,p2"
+                    },
+                "2" : {
+                    "commandName" : "setWifiMode",
+                    "nparams" : 1.000000,
+                    "paramsSig" : "p1"
+                    },
+                "3" : {
+                    "commandName" : "clearCredentials",
+                    "nparams" : 0.000000
+                    }
+                ],
+            "states" : [
+                "1" : {
+                    "name" : "internal:SignalStrengthState"
+                    },
+                "2" : {
+                    "name" : "internal:CurrentInfraConfigState"
+                    },
+                "3" : {
+                    "name" : "internal:WifiModeState"
+                    }
+                ],
+            "type" : "ACTUATOR",
+            "uiClass" : "Wifi",
+            "widgetName" : "Wifi"
+            },
+        "deviceURL" : "internal:\/\/2078-2038-9817\/wifi\/0",
+        "enabled" : true,
+        "label" : "INTERNAL (wifi\/0)",
+        "states" : [
+            "1" : {
+                "name" : "internal:WifiModeState",
+                "type" : 3.000000,
+                "value" : "infrastructure"
+                },
+            "2" : {
+                "name" : "internal:CurrentInfraConfigState",
+                "type" : 3.000000,
+                "value" : "Buero2.4"
+                },
+            "3" : {
+                "name" : "internal:SignalStrengthState",
+                "type" : 1.000000,
+                "value" : 52.000000
+                }
+            ],
+        "subsystemId" : 0.000000,
+        "synced" : true,
+        "type" : 1.000000
+        },
+    "9" : {
+        "attributes" : [
+            ],
+        "available" : true,
+        "controllableName" : "io:StackComponent",
+        "definition" : {
+            "attributes" : [
+                ],
+            "commands" : [
+                "1" : {
+                    "commandName" : "resetNetworkSecurity",
+                    "nparams" : 0.000000
+                    },
+                "2" : {
+                    "commandName" : "discoverActuators",
+                    "nparams" : 1.000000,
+                    "paramsSig" : "p1"
+                    },
+                "3" : {
+                    "commandName" : "joinNetwork",
+                    "nparams" : 0.000000
+                    },
+                "4" : {
+                    "commandName" : "discoverSomfyUnsetActuators",
+                    "nparams" : 0.000000
+                    },
+                "5" : {
+                    "commandName" : "advancedSomfyDiscover",
+                    "nparams" : 1.000000,
+                    "paramsSig" : "p1"
+                    },
+                "6" : {
+                    "commandName" : "discover1WayController",
+                    "nparams" : 0.000000,
+                    "paramsSig" : "*p1,*p2"
+                    },
+                "7" : {
+                    "commandName" : "discoverSensors",
+                    "nparams" : 1.000000,
+                    "paramsSig" : "p1"
+                    },
+                "8" : {
+                    "commandName" : "shareNetwork",
+                    "nparams" : 0.000000
+                    }
+                ],
+            "states" : [
+                ],
+            "type" : "PROTOCOL_GATEWAY",
+            "uiClass" : "ProtocolGateway",
+            "widgetName" : "IOStack"
+            },
+        "deviceURL" : "io:\/\/2078-2038-9817\/6648920",
+        "enabled" : true,
+        "label" : "IO (6648920)",
+        "states" : [
+            ],
+        "subsystemId" : 0.000000,
+        "synced" : true,
+        "type" : 5.000000
+        }
+    }
