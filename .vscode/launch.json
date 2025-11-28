@@ -10,7 +10,7 @@
             "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceRoot}/Tahoma",
-            "args": [2],
+            "args": [1],
             "stopAtEntry": false,
             "cwd": "${fileDirname}",
             "environment": [],
