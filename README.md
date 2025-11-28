@@ -1,7 +1,7 @@
 # Tahoma
 Programm der Serie ProWo zum Auslesen der Somfy Tahoma-Box
 
-Programm kompilieren mit make -f Makefile release
+Programm kompilieren mit make -f Makefile
 
 1° Starten mit “./Tahoma” oder “./Tahoma 2” liest alle Geräte aus der Box die in “Tahoma.config” abgelegt sind. 
     In der Datei Tahoma.config müssen SOMFYPIN und SOMFYTOKEN definiert sein.
