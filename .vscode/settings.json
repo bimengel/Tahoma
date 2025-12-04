@@ -3,6 +3,7 @@
         "*.parameter": "javascript",
         "cstdio": "cpp",
         "cstring": "cpp",
-        "iostream": "cpp"
+        "iostream": "cpp",
+        "new": "cpp"
     }
 }

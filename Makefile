@@ -34,8 +34,7 @@ all: prep release
 #
 # Debug rules
 #
-debug: $(DBGEXE)
-
+debug: prep $(DBGEXE)
 $(DBGEXE): $(DBGOBJS)
 	$(CC) $(CFLAGS) $(DBGCLAGS) -o $(EXE) $^ `pkg-config --libs libcurl`
 
@@ -45,8 +44,7 @@ $(DBGDIR)/%.o: %.cpp
 #
 # Release rules
 #
-release: $(RELEXE)
-
+release: prep $(RELEXE)
 $(RELEXE): $(RELOBJS)
 	$(CC) $(CFLAGS) $(RELCFLAGS) -o $(EXE) $^ `pkg-config --libs libcurl`
 

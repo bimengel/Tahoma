@@ -41,6 +41,7 @@ private:
     int GenerateToken();
     int ActivateToken();
     string ReplaceBackSlash(string str);
+    int WriteToTahomaConfig();
 };
 
 #endif /* CTAHOMA_H */

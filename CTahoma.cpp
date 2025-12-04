@@ -35,7 +35,10 @@ int CTahoma::Start(int action)
             if(iRet)
             {   iRet = ActivateToken();
                 if(iRet)
+                {
+                    WriteToTahomaConfig();
                     iRet = GetDevices();
+                }
             }
         }
         break;
@@ -429,6 +432,28 @@ string CTahoma::ReplaceBackSlash(string str)
             newStr += ch;
     }
     return newStr;
+}
+int CTahoma::WriteToTahomaConfig()
+{
+    int iRet = 0;
+    string strWrite;
+
+    m_pReadFile = new CReadFile;
+    m_pReadFile->OpenWrite(pProgramPath, 1); // Tahoma.config
+    strWrite = "' Definition Somfy erstellt von dem Tahoma-Program\n";
+    m_pReadFile->WriteLine(strWrite.c_str());    
+    strWrite = "SOMFYPIN:" + m_strPIN + "\n";
+    m_pReadFile->WriteLine(strWrite.c_str());
+    strWrite = "SOMFYUSER:" + m_strUSER + "\n";
+    m_pReadFile->WriteLine(strWrite.c_str());
+    strWrite = "SOMFYPWD:" + m_strPWD + "\n";
+    m_pReadFile->WriteLine(strWrite.c_str());
+    strWrite = "SOMFYTOKEN:" + m_strTOKEN + "\n";
+    m_pReadFile->WriteLine(strWrite.c_str());   
+    m_pReadFile->Close();
+    delete m_pReadFile;
+    m_pReadFile = NULL; 
+    return iRet;
 }
 /*  m_strUrl = "";
     for(pos = 0; pos < strUrl.length(); pos++)
