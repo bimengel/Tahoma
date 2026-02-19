@@ -1,13 +1,14 @@
 # Tahoma
-Programm der Serie ProWo zum Auslesen der Somfy Tahoma-Box
+Programm der Serie ProWo zum Auslesen der Somfy Tahoma-Box. 
+Das Programm läuft auf einem Raspberry Pi.
 
 Programm kompilieren mit make -f Makefile
 
-1° Starten mit “./Tahoma” oder “./Tahoma 2” liest alle Geräte aus der Box die in “Tahoma.config” abgelegt sind. 
-    In der Datei Tahoma.config müssen SOMFYPIN und SOMFYTOKEN definiert sein.
+Starten mit “./Tahoma”, die Daten werden aus der Datei Tahoma.config gelesen: 
+    1° Wenn in der Datei SOMFYPIN und SOMFYTOKEN definiert sind werden alle Daten der Somfygeräte eingelesen.
     
-2° Starten mit “./Tahoma 1”, idem 2, generiert und aktiviert aber auch einen Token. 
-    In Tahoma.config müssen SOMFYPIN (Gerätenummer), SOMFYUSER und SOMFYPWD (gründen mit Tahoma-App) definiert sein.
+    2° ist SOMFYTOKEN nicht definiert, müssen neben dem SOMFYPIN auch SOMFYUSER und SOMFYPWD (gründen mit Tahoma-App) definiert sein.
+       Es werden dann auch alle Somfygeräte eingelesen.
 
 Das Resultat befindet sich in der Datei prowo.config. 
 In der Datei Tahoma.json befindet sich die komplette Antwort der Tahoma-Box.
